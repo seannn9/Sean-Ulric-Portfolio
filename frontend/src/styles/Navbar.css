@@ -1,0 +1,29 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    z-index: 9999;
+}
+
+.navbar a {
+    display: block;
+    float: left;
+    margin: 12px 0px 12px 50px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #fca311;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar .active {
+    color: #fca311 !important;
+}
