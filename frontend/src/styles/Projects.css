@@ -1,0 +1,59 @@
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.introHalf {
+    height: 100vh;
+    min-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introHalf .aboutIntro {
+    position: fixed;
+}
+
+.aboutIntro span {
+    color: #fca311;
+}
+
+.projectsHalf {
+    height: fit-content;
+    width: 65vw;
+    background-color: #fca311;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projectCards {
+    height: fit-content;
+    width: auto;
+    margin: 20px 0px;
+    background-color: #14213d;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.projectCards .image {
+    height: 250px;
+    width: 400px;
+    border-radius: 8px;
+}
+
+.projectCards .projectName {
+    margin-left: 20px;
+}
+
+.projectCards .details {
+    color: white;
+    margin-left: 20px;
+    text-align: justify;
+    font-weight: 500;
+}
