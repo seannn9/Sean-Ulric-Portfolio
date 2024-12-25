@@ -33,12 +33,13 @@
 .projectCards {
     height: fit-content;
     width: auto;
+    min-width: 700px;
     margin: 20px 0px;
     background-color: #14213d;
     border-radius: 12px;
     padding: 20px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
 .projectCards .image {
@@ -53,7 +54,25 @@
 
 .projectCards .details {
     color: white;
+    margin-top: 10px;
     margin-left: 20px;
     text-align: justify;
     font-weight: 500;
+}
+
+.projectRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.techUsed {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    width: fit-content;
+}
+
+.techUsed img {
+    margin-left: 20px;
 }
