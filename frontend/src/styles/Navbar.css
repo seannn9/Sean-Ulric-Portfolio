@@ -7,7 +7,7 @@
     color: white;
     position: fixed;
     height: 50px;
-    width: 100%;
+    width: fit-content;
     z-index: 9999;
 }
 
