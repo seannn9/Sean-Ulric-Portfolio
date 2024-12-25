@@ -4,6 +4,7 @@ import ProjectsCard from "../components/ProjectsCard";
 import thesisWebpageImg from "../images/thesis-webpage.png";
 import qrScannerImg from "../images/qr-scanner.png";
 import nonInvertingImg from "../images/non-inverting.png";
+import gpsImg from "../images/gps.png";
 import reactImg from "../images/icons/react.png";
 import viteImg from "../images/icons/vite.png";
 import vercelImg from "../images/icons/vercel.png";
@@ -18,6 +19,7 @@ import numpyImg from "../images/icons/numpy.png";
 import flutterImg from "../images/icons/flutter.png";
 import mapsImg from "../images/icons/maps.png";
 import dartImg from "../images/icons/dart.png";
+import githubImg from "../images/icons/mygithub.png";
 
 export default function Projects() {
     return (
@@ -32,6 +34,12 @@ export default function Projects() {
                     </div>
                 </div>
                 <div className="projectsHalf">
+                    <div className="promoteGithub">
+                        <h3>More of my projects at: </h3>
+                        <a href="https://github.com/seannn9" target="_blank">
+                            <img src={githubImg} alt="seannn9's Github" />
+                        </a>
+                    </div>
                     <ProjectsCard
                         image={qrScannerImg}
                         name="QR Code Scanner"
@@ -39,9 +47,9 @@ export default function Projects() {
                         tech={[pythonImg, opencvImg, numpyImg]}
                     />
                     <ProjectsCard
-                        image=""
+                        image={gpsImg}
                         name="SeaNavigate & Traxing"
-                        details="This mobile app was a simple implementation of Google Maps API. It provides the user a quick and easy way to navigate the road with its accurate navigation and simple user interface."
+                        details="This mobile app was a simple implementation of Google Maps API. It provides the user a quick and easy way to navigate the road with its real-time navigation and simple user interface."
                         tech={[flutterImg, dartImg, mapsImg]}
                     />
                     <ProjectsCard

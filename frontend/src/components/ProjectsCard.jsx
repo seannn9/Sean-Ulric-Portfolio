@@ -14,8 +14,8 @@ export default function ProjectsCard(props) {
                 {props.tech && props.tech.length > 0 && (
                     <div className="techUsed">
                         <h4>Technology Used: </h4>
-                        {props.tech.map((techImg) => (
-                            <img src={techImg} />
+                        {props.tech.map((techImg, index) => (
+                            <img key={index} src={techImg} />
                         ))}
                     </div>
                 )}
@@ -25,8 +25,8 @@ export default function ProjectsCard(props) {
 }
 
 ProjectsCard.propTypes = {
-    image: propTypes.any,
-    name: propTypes.string,
-    details: propTypes.string,
-    tech: propTypes.arrayOf(propTypes.string),
+    image: propTypes.any.isRequired,
+    name: propTypes.string.isRequired,
+    details: propTypes.string.isRequired,
+    tech: propTypes.arrayOf(propTypes.string).isRequired,
 };
