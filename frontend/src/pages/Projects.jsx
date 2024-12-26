@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import "../styles/Projects.css";
+import projectCss from "../styles/modules/Projects.module.css";
 import ProjectsCard from "../components/ProjectsCard";
 import thesisWebpageImg from "../images/thesis-webpage.png";
 import qrScannerImg from "../images/qr-scanner.png";
@@ -25,16 +25,16 @@ export default function Projects() {
     return (
         <>
             <Navbar activeProjects="active" />
-            <div className="mainContainer">
-                <div className="introHalf">
-                    <div className="aboutIntro">
+            <div className={projectCss.mainContainer}>
+                <div className={projectCss.introHalf}>
+                    <div className={projectCss.aboutIntro}>
                         <h1>
                             These are some of my <span>PROJECTS</span>
                         </h1>
                     </div>
                 </div>
-                <div className="projectsHalf">
-                    <div className="promoteGithub">
+                <div className={projectCss.projectsHalf}>
+                    <div className={projectCss.promoteGithub}>
                         <h3>More of my projects at: </h3>
                         <a href="https://github.com/seannn9" target="_blank">
                             <img src={githubImg} alt="seannn9's Github" />
