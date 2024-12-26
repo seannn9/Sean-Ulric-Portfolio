@@ -31,7 +31,38 @@ body {
 }
 
 .introductionCard .names {
+    width: fit-content;
+    color: transparent;
+    -webkit-text-stroke: 1px #fca311;
+    position: relative;
+}
+
+.introductionCard .names::before {
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
     color: #fca311;
+    white-space: nowrap;
+    clip-path: inset(0 100% 0 0);
+    animation: revealText 1s ease-in forwards;
+}
+
+.introductionCard .names#myName::before {
+    content: "SEAN ULRIC MONTANO";
+}
+
+.introductionCard .names#myUni::before {
+    content: "@ DE LA SALLE UNIVERSITY - DASMARIÑAS";
+    animation-delay: 0.95s;
+}
+
+@keyframes revealText {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
 }
 
 .secondHalf {
@@ -47,7 +78,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .secondHalf .contactContainer img {
@@ -59,7 +90,7 @@ body {
 .secondHalf > img {
     height: 386px;
     width: 386px;
-    border: 2px solid #14213d;
     border-radius: 200px;
     background-color: #fca311;
+    filter: drop-shadow(0 0 2rem #ea950d);
 }

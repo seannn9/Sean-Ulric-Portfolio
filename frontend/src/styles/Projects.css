@@ -17,7 +17,25 @@
 }
 
 .aboutIntro span {
+    color: transparent;
+    -webkit-text-stroke: 1px #fca311;
+    position: relative;
+}
+
+.aboutIntro span::before {
+    content: "PROJECTS";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
     color: #fca311;
+    animation: slideIn 1s ease-in forwards;
+}
+
+@keyframes slideIn {
+    to {
+        width: 100%;
+    }
 }
 
 .projectsHalf {
