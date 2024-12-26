@@ -5,7 +5,7 @@
     overflow: hidden;
     /* background-color: black; */
     color: white;
-    position: fixed;
+    position: absolute;
     height: 50px;
     width: fit-content;
     z-index: 9999;
