@@ -12,12 +12,14 @@ export default function Home() {
                 <div className="firstHalf">
                     <div className="introductionCard">
                         <h2>HELLO, I AM</h2>
-                        <h1 className="names">SEAN ULRIC MONTANO</h1>
+                        <h1 className="names" id="myName">
+                            SEAN ULRIC MONTANO
+                        </h1>
                         <br />
-                        <h1>COMPUTER ENGINEERING STUDENT</h1>
-                        <h2 className="names">
+                        <h2>COMPUTER ENGINEERING STUDENT</h2>
+                        <h1 className="names" id="myUni">
                             @ DE LA SALLE UNIVERSITY - DASMARIÑAS
-                        </h2>
+                        </h1>
                     </div>
                 </div>
                 <div className="secondHalf">
