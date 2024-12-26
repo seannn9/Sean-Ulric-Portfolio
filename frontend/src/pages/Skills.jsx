@@ -12,6 +12,7 @@ import flutterImg from "../images/icons/px128/flutter.png";
 import arduinoImg from "../images/icons/px128/arduino.png";
 import jsImg from "../images/icons/px128/js.png";
 import githubImg from "../images/icons/px128/github.png";
+import vbnetImg from "../images/icons/px128/vbnet.png";
 
 export default function Skills() {
     return (
@@ -32,6 +33,7 @@ export default function Skills() {
                     <SkillsCard image={flutterImg} name="FLUTTER" />
                     <SkillsCard image={githubImg} name="GITHUB" />
                     <SkillsCard image={arduinoImg} name="ARDUINO" />
+                    <SkillsCard image={vbnetImg} name="VISUAL BASIC" />
                 </div>
             </div>
         </>
