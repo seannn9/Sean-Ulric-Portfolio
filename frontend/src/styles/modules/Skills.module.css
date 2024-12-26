@@ -1,0 +1,48 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-height: 100vh;
+    background-color: black;
+    margin-top: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #14213d;
+    border-radius: 12px;
+    height: 250px;
+    width: 250px;
+    gap: 15px;
+}
+
+/* .card > h2 {
+    color: #fca311;
+} */
+
+.card img {
+    height: 128px;
+    width: 128px;
+}
+
+.skillContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 0px 150px;
+}
+
+.mainContainer > h1 {
+    font-size: 2.5em;
+}
+
+span {
+    color: #fca311;
+}
