@@ -9,9 +9,9 @@ export default function Navbar(props) {
                 <Link className={props.activeHome} to="/">
                     Home
                 </Link>
-                <Link className={props.activeAbout} to="/about">
+                {/* <Link className={props.activeAbout} to="/about">
                     About
-                </Link>
+                </Link> */}
                 <Link className={props.activeSkills} to="/skills">
                     Skills
                 </Link>
