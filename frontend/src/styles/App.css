@@ -18,9 +18,18 @@ body {
     width: 100vw;
 }
 
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    background-color: black;
+    justify-content: space-evenly;
+}
+
 .firstHalf {
     height: 100vh;
-    width: 50vw;
+    max-width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +44,16 @@ body {
     color: transparent;
     -webkit-text-stroke: 1px #fca311;
     position: relative;
+    animation: getColor 0s step-end;
+    animation-fill-mode: both;
+}
+
+.introductionCard .names#myName {
+    animation-delay: 1s;
+}
+
+.introductionCard .names#myUni {
+    animation-delay: 1.95s;
 }
 
 .introductionCard .names::before {
@@ -62,12 +81,18 @@ body {
     }
     to {
         clip-path: inset(0 0 0 0);
+        visibility: hidden;
+    }
+}
+@keyframes getColor {
+    to {
+        color: #fca311;
     }
 }
 
 .secondHalf {
-    height: 100vh;
-    width: 50vw;
+    max-height: 100vh;
+    max-width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
