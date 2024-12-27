@@ -9,7 +9,7 @@ export default function ProjectsCard(props) {
                     <img className={projectCss.image} src={props.image} />
                     <div className={projectCss.projectInfo}>
                         <h2 className={projectCss.projectName}>{props.name}</h2>
-                        <h3 className={projectCss.details}>{props.details}</h3>
+                        <h4 className={projectCss.details}>{props.details}</h4>
                     </div>
                 </div>
                 {props.tech && props.tech.length > 0 && (
