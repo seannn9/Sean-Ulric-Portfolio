@@ -92,8 +92,6 @@
 .projectCards .image {
     min-width: 100%;
     max-height: 500px;
-    /* max-width: 400px; */
-    /* border-radius: 8px; */
     object-fit: scale-down;
 }
 
@@ -103,8 +101,6 @@
 
 .projectCards .details {
     color: white;
-    /* margin-top: 10px;
-    margin-left: 20px; */
     margin: 10px 0px 20px 0px;
     text-align: justify;
     font-weight: 500;
