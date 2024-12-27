@@ -13,6 +13,7 @@ import arduinoImg from "../images/icons/px128/arduino.png";
 import jsImg from "../images/icons/px128/js.png";
 import githubImg from "../images/icons/px128/github.png";
 import vbnetImg from "../images/icons/px128/vbnet.png";
+import phpImg from "../images/icons/px128/php.png";
 
 export default function Skills() {
     return (
@@ -34,6 +35,7 @@ export default function Skills() {
                     <SkillsCard image={githubImg} name="GITHUB" />
                     <SkillsCard image={arduinoImg} name="ARDUINO" />
                     <SkillsCard image={vbnetImg} name="VISUAL BASIC" />
+                    <SkillsCard image={phpImg} name="PHP" />
                 </div>
             </div>
         </>
