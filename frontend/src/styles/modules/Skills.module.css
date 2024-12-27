@@ -19,6 +19,7 @@
     height: 250px;
     width: 250px;
     gap: 15px;
+    padding: 10px;
 }
 
 .card img {
@@ -35,10 +36,67 @@
     margin: 0px 150px 30px;
 }
 
-.mainContainer > h1 {
-    font-size: 2.5em;
+.mainContainer span {
+    color: transparent;
+    -webkit-text-stroke: 1px #fca311;
+    position: relative;
+    animation: getColor 0s step-end;
+    animation-delay: 1s;
+    animation-fill-mode: both;
 }
 
-span {
+.mainContainer span::before {
+    content: "SKILLS";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
     color: #fca311;
+    animation: slideIn 1s ease-in forwards;
+}
+
+@keyframes slideIn {
+    to {
+        width: 100%;
+        visibility: hidden;
+    }
+}
+
+@keyframes getColor {
+    to {
+        color: #fca311;
+    }
+}
+
+/* skill level */
+.levelContainer {
+    width: 100%;
+    background-color: #e5e5e5;
+    height: fit-content;
+}
+
+.level {
+    height: fit-content;
+    background-color: transparent;
+    position: relative;
+}
+
+.level::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fca311;
+    animation: slideIn 1s ease-in forwards;
+}
+
+@keyframes slideIn {
+    to {
+        width: 100%;
+    }
+}
+
+.level p {
+    visibility: hidden;
 }
