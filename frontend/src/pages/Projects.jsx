@@ -1,9 +1,12 @@
 import Navbar from "../components/Navbar";
 import projectCss from "../styles/modules/Projects.module.css";
+// images for project
 import ProjectsCard from "../components/ProjectsCard";
 import thesisWebpageImg from "../images/thesis-webpage.png";
 import qrScannerImg from "../images/qr-scanner.png";
 import nonInvertingImg from "../images/non-inverting.png";
+import trafficImg from "../images/trafficlight.png";
+// images for tech used
 import gpsImg from "../images/gps.png";
 import reactImg from "../images/icons/react.png";
 import viteImg from "../images/icons/vite.png";
@@ -20,6 +23,7 @@ import flutterImg from "../images/icons/flutter.png";
 import mapsImg from "../images/icons/maps.png";
 import dartImg from "../images/icons/dart.png";
 import githubImg from "../images/icons/mygithub.png";
+import javaImg from "../images/icons/px128/java.png";
 
 export default function Projects() {
     return (
@@ -69,6 +73,12 @@ export default function Projects() {
                             mongoImg,
                             expressImg,
                         ]}
+                    />
+                    <ProjectsCard
+                        image={trafficImg}
+                        name="Traffic Light Simulation"
+                        details="This program is a simulation of how a Traffic Light works and also comes with a manual control for users to play with."
+                        tech={[javaImg]}
                     />
                 </div>
             </div>
