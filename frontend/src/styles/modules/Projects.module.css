@@ -97,6 +97,7 @@
 
 .projectCards .projectName {
     width: fit-content;
+    color: #fca311;
 }
 
 .projectCards .details {
