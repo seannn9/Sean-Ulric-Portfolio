@@ -24,18 +24,78 @@ export default function Skills() {
                     Here are my <span>SKILLS</span>
                 </h1>
                 <div className={skillCss.skillContainer}>
-                    <SkillsCard image={htmlImg} name="HTML" />
-                    <SkillsCard image={cssImg} name="CSS" />
-                    <SkillsCard image={jsImg} name="JAVASCRIPT" />
-                    <SkillsCard image={reactImg} name="REACT JS" />
-                    <SkillsCard image={pythonImg} name="PYTHON" />
-                    <SkillsCard image={cppImg} name="C++" />
-                    <SkillsCard image={javaImg} name="JAVA" />
-                    <SkillsCard image={flutterImg} name="FLUTTER" />
-                    <SkillsCard image={githubImg} name="GITHUB" />
-                    <SkillsCard image={arduinoImg} name="ARDUINO" />
-                    <SkillsCard image={vbnetImg} name="VISUAL BASIC" />
-                    <SkillsCard image={phpImg} name="PHP" />
+                    <SkillsCard
+                        image={htmlImg}
+                        name="HTML"
+                        style={{ width: "80%" }}
+                        levelText={60}
+                    />
+                    <SkillsCard
+                        image={cssImg}
+                        name="CSS"
+                        style={{ width: "60%" }}
+                        levelText={40}
+                    />
+                    <SkillsCard
+                        image={jsImg}
+                        name="JAVASCRIPT"
+                        style={{ width: "25%" }}
+                        levelText={20}
+                    />
+                    <SkillsCard
+                        image={reactImg}
+                        name="REACT JS"
+                        style={{ width: "45%" }}
+                        levelText={45}
+                    />
+                    <SkillsCard
+                        image={pythonImg}
+                        name="PYTHON"
+                        style={{ width: "55%" }}
+                        levelText={55}
+                    />
+                    <SkillsCard
+                        image={cppImg}
+                        name="C++"
+                        style={{ width: "45%" }}
+                        levelText={30}
+                    />
+                    <SkillsCard
+                        image={javaImg}
+                        name="JAVA"
+                        style={{ width: "45%" }}
+                        levelText={30}
+                    />
+                    <SkillsCard
+                        image={flutterImg}
+                        name="FLUTTER"
+                        style={{ width: "50%" }}
+                        levelText={50}
+                    />
+                    <SkillsCard
+                        image={githubImg}
+                        name="GITHUB"
+                        style={{ width: "70%" }}
+                        levelText={70}
+                    />
+                    <SkillsCard
+                        image={arduinoImg}
+                        name="ARDUINO"
+                        style={{ width: "45%" }}
+                        levelText={45}
+                    />
+                    <SkillsCard
+                        image={vbnetImg}
+                        name="VISUAL BASIC"
+                        style={{ width: "70%" }}
+                        levelText={70}
+                    />
+                    <SkillsCard
+                        image={phpImg}
+                        name="PHP"
+                        style={{ width: "35%" }}
+                        levelText={35}
+                    />
                 </div>
             </div>
         </>

@@ -16,14 +16,19 @@ function Tilt(props) {
 
 export default function SkillsCard(props) {
     const options = {
-        scale: 1, // default scale
-        speed: 1000, // default is 300ms
-        max: 15, // default max tilt rotation
+        scale: 1,
+        speed: 1000,
+        max: 15,
     };
     return (
         <Tilt className={skillCss.card} options={options}>
             <img src={props.image} alt="" />
             <h2>{props.name}</h2>
+            <div className={skillCss.levelContainer}>
+                <div className={skillCss.level} style={props.style}>
+                    <p>{props.levelText}</p>
+                </div>
+            </div>
         </Tilt>
     );
 }
@@ -31,4 +36,6 @@ export default function SkillsCard(props) {
 SkillsCard.propTypes = {
     image: propTypes.string.isRequired,
     name: propTypes.string.isRequired,
+    levelText: propTypes.number,
+    style: propTypes.object,
 };
