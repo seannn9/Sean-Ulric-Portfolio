@@ -1,5 +1,6 @@
 import propTypes from "prop-types";
 import projectCss from "../styles/modules/Projects.module.css";
+import githubImg from "../images/icons/github.png";
 
 export default function ProjectsCard(props) {
     return (
@@ -14,10 +15,18 @@ export default function ProjectsCard(props) {
                 </div>
                 {props.tech && props.tech.length > 0 && (
                     <div className={projectCss.techUsed}>
-                        <h4>Technology Used: </h4>
-                        {props.tech.map((techImg, index) => (
-                            <img key={index} src={techImg} />
-                        ))}
+                        <div className={projectCss.technologies}>
+                            <h4>Technology Used: </h4>
+                            {props.tech.map((techImg, index) => (
+                                <img key={index} src={techImg} />
+                            ))}
+                        </div>
+                        <div className={projectCss.sourceCode}>
+                            <h4>Source Code: </h4>
+                            <a href={props.sourceCode} target="_blank">
+                                <img src={githubImg} alt="source code" />
+                            </a>
+                        </div>
                     </div>
                 )}
             </div>
@@ -30,4 +39,5 @@ ProjectsCard.propTypes = {
     name: propTypes.string.isRequired,
     details: propTypes.string.isRequired,
     tech: propTypes.arrayOf(propTypes.string).isRequired,
+    sourceCode: propTypes.string,
 };
