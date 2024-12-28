@@ -49,12 +49,14 @@ export default function Projects() {
                         name="QR Code Scanner"
                         details="This app was the final project for our course DSP. This is a simple QR code scanner that works with both images and live video feed of a QR. It outputs the data of the QR and makes it clickable for easy access."
                         tech={[pythonImg, opencvImg, numpyImg]}
+                        sourceCode="https://github.com/seannn9/QR-SCANNER"
                     />
                     <ProjectsCard
                         image={gpsImg}
                         name="SeaNavigate & Traxing"
                         details="This mobile app was a simple implementation of Google Maps API. It provides the user a quick and easy way to navigate the road with its real-time navigation and simple user interface."
                         tech={[flutterImg, dartImg, mapsImg]}
+                        sourceCode="https://github.com/seannn9/GPS-App"
                     />
                     <ProjectsCard
                         image={nonInvertingImg}
@@ -73,12 +75,14 @@ export default function Projects() {
                             mongoImg,
                             expressImg,
                         ]}
+                        sourceCode="https://github.com/seannn9/Thesis-Webpage-Mockup"
                     />
                     <ProjectsCard
                         image={trafficImg}
                         name="Traffic Light Simulation"
                         details="This program is a simulation of how a Traffic Light works and also comes with a manual control for users to play with."
                         tech={[javaImg]}
+                        sourceCode="https://github.com/seannn9/TrafficLights"
                     />
                 </div>
             </div>
