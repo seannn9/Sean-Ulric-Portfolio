@@ -20,27 +20,29 @@ export default function Skills() {
         <>
             <Navbar activeSkills="active" />
             <div className={skillCss.mainContainer}>
-                <h1>
-                    Here are my <span>SKILLS</span>
+                <h1 style={{ textAlign: "center" }}>
+                    Here are the <span className={skillCss.skills}>SKILLS</span>{" "}
+                    <br />
+                    that I acquired during College and Self-Study
                 </h1>
                 <div className={skillCss.skillContainer}>
                     <SkillsCard
                         image={htmlImg}
                         name="HTML"
                         style={{ width: "80%" }}
-                        levelText={60}
+                        levelText={80}
                     />
                     <SkillsCard
                         image={cssImg}
                         name="CSS"
                         style={{ width: "60%" }}
-                        levelText={40}
+                        levelText={60}
                     />
                     <SkillsCard
                         image={jsImg}
                         name="JAVASCRIPT"
                         style={{ width: "25%" }}
-                        levelText={20}
+                        levelText={25}
                     />
                     <SkillsCard
                         image={reactImg}
@@ -58,13 +60,13 @@ export default function Skills() {
                         image={cppImg}
                         name="C++"
                         style={{ width: "45%" }}
-                        levelText={30}
+                        levelText={45}
                     />
                     <SkillsCard
                         image={javaImg}
                         name="JAVA"
                         style={{ width: "45%" }}
-                        levelText={30}
+                        levelText={45}
                     />
                     <SkillsCard
                         image={flutterImg}
