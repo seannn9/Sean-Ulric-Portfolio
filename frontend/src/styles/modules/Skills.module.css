@@ -36,7 +36,7 @@
     margin: 0px 150px 30px;
 }
 
-.mainContainer span {
+.mainContainer span:not(.study) {
     color: transparent;
     -webkit-text-stroke: 1px #fca311;
     position: relative;
@@ -54,6 +54,11 @@
     animation: slideIn 1s ease-in forwards;
 }
 
+.mainContainer .study {
+    text-decoration: underline;
+    text-decoration-color: #fca311;
+}
+
 @keyframes slideIn {
     to {
         width: 100%;
@@ -64,7 +69,6 @@
 @keyframes getColor {
     to {
         color: #fca311;
-        -webkit-text-stroke: 0px;
     }
 }
 

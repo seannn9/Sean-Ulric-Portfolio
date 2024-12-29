@@ -23,7 +23,10 @@ export default function Skills() {
                 <h1 style={{ textAlign: "center" }}>
                     Here are the <span className={skillCss.skills}>SKILLS</span>{" "}
                     <br />
-                    that I acquired during College and Self-Study
+                    that I acquired during{" "}
+                    <span className={skillCss.study}>
+                        College and Self-Study
+                    </span>
                 </h1>
                 <div className={skillCss.skillContainer}>
                     <SkillsCard
