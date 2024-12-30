@@ -21,12 +21,14 @@ export default function ProjectsCard(props) {
                                 <img key={index} src={techImg} />
                             ))}
                         </div>
-                        <div className={projectCss.sourceCode}>
-                            <h4>Source Code: </h4>
-                            <a href={props.sourceCode} target="_blank">
-                                <img src={githubImg} alt="source code" />
-                            </a>
-                        </div>
+                        {props.sourceCode && props.sourceCode.length > 0 && (
+                            <div className={projectCss.sourceCode}>
+                                <h4>Source Code: </h4>
+                                <a href={props.sourceCode} target="_blank">
+                                    <img src={githubImg} alt="source code" />
+                                </a>
+                            </div>
+                        )}
                     </div>
                 )}
             </div>
