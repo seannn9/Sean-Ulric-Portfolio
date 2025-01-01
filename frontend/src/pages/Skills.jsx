@@ -20,14 +20,19 @@ export default function Skills() {
         <>
             <Navbar activeSkills="active" />
             <div className={skillCss.mainContainer}>
-                <h1 style={{ textAlign: "center" }}>
-                    Here are the <span className={skillCss.skills}>SKILLS</span>{" "}
+                <div className={skillCss.header}>
+                    <h1>
+                        Here are the{" "}
+                        <span className={skillCss.skills}>SKILLS</span>{" "}
+                    </h1>
                     <br />
-                    that I acquired during{" "}
-                    <span className={skillCss.study}>
-                        College and Self-Study
-                    </span>
-                </h1>
+                    <h2>
+                        that I acquired during{" "}
+                        <span className={skillCss.study}>
+                            College and Self-Study
+                        </span>
+                    </h2>
+                </div>
                 <div className={skillCss.skillContainer}>
                     <SkillsCard
                         image={htmlImg}
