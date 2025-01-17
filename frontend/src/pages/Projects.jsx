@@ -63,6 +63,7 @@ export default function Projects() {
                         name="Non-Inverting OP Amp IC Tester"
                         details="This program was our midterm project for Embedded Systems which is checking if an IC is good or bad based on its output voltages."
                         tech={[vbnetImg, cppImg, arduinoImg]}
+                        sourceCode="https://github.com/seannn9/NonInverting-IC-Tester"
                     />
                     <ProjectsCard
                         image={thesisWebpageImg}
