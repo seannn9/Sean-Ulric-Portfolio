@@ -22,7 +22,7 @@ import numpyImg from "../images/icons/numpy.png";
 import flutterImg from "../images/icons/flutter.png";
 import mapsImg from "../images/icons/maps.png";
 import dartImg from "../images/icons/dart.png";
-import githubImg from "../images/icons/mygithub.png";
+import githubWhiteImg from "../images/icons/github.png";
 import javaImg from "../images/icons/px128/java.png";
 
 export default function Projects() {
@@ -41,7 +41,7 @@ export default function Projects() {
                     <div className={projectCss.promoteGithub}>
                         <h3>More of my projects at: </h3>
                         <a href="https://github.com/seannn9" target="_blank">
-                            <img src={githubImg} alt="seannn9's Github" />
+                            <img src={githubWhiteImg} alt="seannn9's Github" />
                         </a>
                     </div>
                     <ProjectsCard
