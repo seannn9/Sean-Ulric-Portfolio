@@ -22,7 +22,7 @@ export default function SkillsCard(props) {
     };
     return (
         <Tilt className={skillCss.card} options={options}>
-            <img src={props.image} alt="" />
+            <img loading="lazy" src={props.image} />
             <h2>{props.name}</h2>
             <div className={skillCss.levelContainer}>
                 <div className={skillCss.level} style={props.style}>
@@ -38,4 +38,5 @@ SkillsCard.propTypes = {
     name: propTypes.string.isRequired,
     levelText: propTypes.number,
     style: propTypes.object,
+    alt: propTypes.string,
 };

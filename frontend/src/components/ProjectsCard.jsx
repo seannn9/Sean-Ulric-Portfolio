@@ -7,7 +7,11 @@ export default function ProjectsCard(props) {
         <>
             <div className={projectCss.projectCards}>
                 <div className={projectCss.projectRow}>
-                    <img className={projectCss.image} src={props.image} />
+                    <img
+                        loading="lazy"
+                        className={projectCss.image}
+                        src={props.image}
+                    />
                     <div className={projectCss.projectInfo}>
                         <h2 className={projectCss.projectName}>{props.name}</h2>
                         <h4 className={projectCss.details}>{props.details}</h4>
@@ -18,14 +22,18 @@ export default function ProjectsCard(props) {
                         <div className={projectCss.technologies}>
                             <h4>Technology Used: </h4>
                             {props.tech.map((techImg, index) => (
-                                <img key={index} src={techImg} />
+                                <img loading="lazy" key={index} src={techImg} />
                             ))}
                         </div>
                         {props.sourceCode && props.sourceCode.length > 0 && (
                             <div className={projectCss.sourceCode}>
                                 <h4>Source Code: </h4>
                                 <a href={props.sourceCode} target="_blank">
-                                    <img src={githubImg} alt="source code" />
+                                    <img
+                                        loading="lazy"
+                                        src={githubImg}
+                                        alt="source code"
+                                    />
                                 </a>
                             </div>
                         )}
