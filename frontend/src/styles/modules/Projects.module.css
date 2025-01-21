@@ -57,7 +57,8 @@
 .projectsHalf {
     min-height: fit-content;
     min-width: 100%;
-    background-color: #fca311;
+    /* background-color: #fca311; */
+    background-color: black;
     padding: 10px 0px;
     display: flex;
     flex-direction: column;
