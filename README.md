@@ -1,6 +1,6 @@
-# Portfolio | Sean Ulric
+# Portfolio Website
 
-Technologies Used:
+## Technologies Used:
 - React
 - Node JS
 - Vite
